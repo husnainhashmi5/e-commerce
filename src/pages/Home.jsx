@@ -4,7 +4,7 @@ import Features from "../components/Features";
 import LatestCollections from "../components/LatestCollections";
 import { motion } from "framer-motion";
 import BestSeller from "../components/BestSeller";
-
+import CircularCarousel from "../components/slick-carousel"
 
 
 
@@ -54,6 +54,7 @@ const Home = () => {
 		>
 			<div className="container">
 				<MixedAutoSlider  />
+				<CircularCarousel/>
 
 				<LatestCollections/>
 				

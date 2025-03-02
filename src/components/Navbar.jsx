@@ -94,7 +94,7 @@ const Navbar = () => {
 							CONTACT
 						</NavLink>
 					</li>
-					<li>
+					{/* <li>
 						<NavLink
 							onClick={() => setShowMenu((prev) => !prev)}
 							className="admin-panel-btn btn  rounded-pill mt-3 text-decoration-none c-gray p-3 py-2 d-block border-gray"
@@ -102,7 +102,7 @@ const Navbar = () => {
 						>
 							ADMIN PANEL
 						</NavLink>
-					</li>
+					</li> */}
 				</ul>
 
 				{/* Right Side Icons */}
@@ -111,16 +111,16 @@ const Navbar = () => {
 						{showSearchIcon && 
 							<i className="bx bx-search-alt-2 fs-little-big c-gray cursor" onClick={() => setActiveSearch(true)}></i>
 						}
-						<NavLink className="login-link text-deoration-none" to="/login" data-bs-toggle="tooltip"
+						{/* <NavLink className="login-link text-deoration-none" to="/login" data-bs-toggle="tooltip"
 						data-bs-placement="bottom" data-bs-title="Login">
 							<i className="bx bx-user fs-little-big c-gray cursor"></i>
-						</NavLink>
-						<button className="bg-transparent border-0 position-relative">
+						</NavLink> */}
+						{/* <button className="bg-transparent border-0 position-relative">
 							<i className="bx bx-shopping-bag fs-little-big c-gray cursor"></i>
 							<span className="bg-black d-block rounded-circle cart-icon c-white">
 								0
 							</span>
-						</button>
+						</button> */}
 					</div>
 					<button
 						onClick={() => setShowMenu((prev) => !prev)}

@@ -681,5 +681,6 @@ const productsData = [
         "bestseller": false
     }
 ]
+// const productsData = []
 
 export default productsData
