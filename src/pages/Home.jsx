@@ -5,6 +5,8 @@ import LatestCollections from "../components/LatestCollections";
 import { motion } from "framer-motion";
 import BestSeller from "../components/BestSeller";
 import CircularCarousel from "../components/slick-carousel"
+import TrustedBrands from "../components/TrustedBrands/TrustedBrands"
+
 
 
 
@@ -63,6 +65,7 @@ const Home = () => {
 				<Features />
 
 				<SubscriptionForm />
+				<TrustedBrands/>
 			</div>
 		</motion.section>
 	);

@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import p_img52 from "../assets/p_img52.png";
 
+const image_men = "https://scontent.flhe3-2.fna.fbcdn.net/v/t39.30808-6/464840727_8408126509282578_8313888079036204843_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FG5jAaNPepsQ7kNvgGqNyke&_nc_oc=AdjvFHYxmLDEv9-hqlEw-uGU3fRS3WxcLm_OBcNTl-BKcWPiMO6MYnoOCnjEkCgDv4g&_nc_zt=23&_nc_ht=scontent.flhe3-2.fna&_nc_gid=AyLrqMiZx-jm-8Aw-81-Tvl&oh=00_AYB84WyWNb_OHYM6y01x2m8RLl05ScAk58EJ2gnyDE4fvQ&oe=67CBE722"
 const carouselData = [
   { id: 1, image: p_img52, title: "Mens", content: "Clark Kent" },
   { id: 2, image: p_img52, title: "Womens", content: "Bruce Wayne" },
@@ -13,7 +14,7 @@ const carouselData = [
   { id: 5, image: p_img52, title: "Fish", content: "Reed Richards" },
   { id: 6, image: p_img52, title: "Paddle", content: "Wade Wilson" },
   { id: 6, image: p_img52, title: "Rock & Snow", content: "Wade Wilson" },
-  { id: 6, image: p_img52, title: "Travel", content: "Wade Wilson" },
+  { id: 6, image: image_men, title: "Travel", content: "Wade Wilson" },
 ];
 
 const CircularCarousel = () => {
