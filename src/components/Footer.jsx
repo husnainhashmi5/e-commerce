@@ -38,7 +38,7 @@ const Footer = () => {
 						<article className="col-12 col-lg-6 text-center">
 							<Link to="/" className="logo text-decoration-none text-dark">
 								<h3 className="fs-3 mb-0">
-									Algohary <span className="fw-medium c-pink">Shop</span>
+									Dady<span className="fw-medium c-pink">Bux</span>
 								</h3>
 							</Link>
 							<p className="mt-3">

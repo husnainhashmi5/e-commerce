@@ -43,7 +43,7 @@ const Navbar = () => {
 				<main className="col-12 d-flex justify-content-between align-items-center">
 				{/* Logo */}
 				<Link to="/" className="logo text-decoration-none text-dark">
-					<h3 className="fs-5 mb-0">Algohary <span className="fw-medium c-pink">Shop</span></h3>
+					<h3 className="fs-5 mb-0">Dady<span className="fw-medium c-pink">Bux</span></h3>
 				</Link>
 
 				{/* Mobile Menu */}
