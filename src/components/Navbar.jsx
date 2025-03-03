@@ -106,7 +106,7 @@ const Navbar = () => {
 				</ul>
 
 				{/* Right Side Icons */}
-				<div className="right d-flex align-items-center gap-1 gap-sm-3">
+				<div className="right d-flex align-items-center gap-1 gap-sm-3 next-to-manu" >
 					<div className="icons d-flex gap-1 gap-sm-3">
 						{showSearchIcon && 
 							<i className="bx bx-search-alt-2 fs-little-big c-gray cursor" onClick={() => setActiveSearch(true)}></i>
