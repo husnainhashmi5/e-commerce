@@ -142,7 +142,7 @@ const ProductDetails = () => {
 						<article className="col-12 col-sm col-lg-8 mb-3">
 							<h1 className="mt-3 mrt-0 fs-2">{productData.name}</h1>
 							{/* Product Rating */}
-							<div className="rating">
+							{/* <div className="rating">
 								<div className="stars mb-3">
 									{Array(5)
 										.fill()
@@ -164,7 +164,7 @@ const ProductDetails = () => {
 								<span className="fw-bold fs-2 d-block mb-3">
 									&#x24;{productData.price}
 								</span>
-							</div>
+							</div> */}
 							{/* Product Description */}
 							<p className="c-gray">{productData.description}</p>
 							{/* Select Size */}
@@ -188,9 +188,9 @@ const ProductDetails = () => {
 								</div>
 							</div>
 							{/* Add to Cart Button */}
-							<button className="addcart-btn btn rounded-0 bg-black c-white mt-4 trans-3 mb-2 py-2 px-4">
+							{/* <button className="addcart-btn btn rounded-0 bg-black c-white mt-4 trans-3 mb-2 py-2 px-4">
 								ADD TO CART
-							</button>
+							</button> */}
 							{/* Product Description and Reviews */}
 							<ul className="features ps-0 mt-4 border-top pt-3">
 								<li className="mb-1">100% Original product.</li>
@@ -209,9 +209,9 @@ const ProductDetails = () => {
 							<li className="py-2 px-4 border-gray fw-bold border-bottom-0 active">
 								Description
 							</li>
-							<li className="py-2 px-4 border-gray border-start-0 border-bottom-0">
+							{/* <li className="py-2 px-4 border-gray border-start-0 border-bottom-0">
 								Reviews ({productData.rating.count})
-							</li>
+							</li> */}
 						</ul>
 						<div className="description-text border-gray p-3 c-gray">
 							An e-commerce website is an online platform that facilitates the

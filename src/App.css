@@ -370,6 +370,20 @@ nav ul a.active {
 	font-size: 1.4rem;
 }
 
+/* Carousel */
+.category-carousel-img{
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+}
+.category-carousel-card{
+	border: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* end carousel */
+
 /* Admin Panel Page */
 .admin-panel,
 .Login-Page {
@@ -462,6 +476,9 @@ nav ul a.active {
 		align-items: center;
 		margin-bottom: 0;
 		justify-content: center;
+	}
+	nav .next-to-manu{
+		width: 19%;
 	}
 	nav a:not(.logo).active {
 		background-color: transparent;
