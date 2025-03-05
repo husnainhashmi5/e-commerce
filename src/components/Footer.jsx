@@ -97,7 +97,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<a
-										href="https://www.facebook.com/"
+										href="https://www.facebook.com/dadybux"
 										target="_blank"
 										title="Go To Facebook"
 										className="text-decoration-none c-gray"
@@ -114,7 +114,7 @@ const Footer = () => {
 				<div className="copyrights border-t-gray mt-5 pt-4 col-12 text-center c-d-gray">
 					Copyright @{currentYear}
 					<a
-						href="https://www.facebook.com/"
+						href="https://www.facebook.com/dadybux"
 						target="_blank"
 						title="Go To Facebook"
 						className="text-decoration-none c-black p-2 fw-bold"
