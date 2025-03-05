@@ -1,23 +1,34 @@
-export const skillsData = [
-    'React',
-    'Django',
-    'Python',
-    'Redux',
-    'HTML',
-    'Javascript',
-    'CSS',
-    'Tailwind',
-    'Bootstrap',
-    'Firebase',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Dart',
-    'Flutter',
-    'Figma',
-    'Canva',
-    
+import B1 from '../../assets/TrustedBrandsSvgs/north-face.svg'
+import B2 from '../../assets/TrustedBrandsSvgs/outdoor-research.svg'
+import B3 from '../../assets/TrustedBrandsSvgs/patagonia.svg'
+import B4 from '../../assets/TrustedBrandsSvgs/sorel.svg'
+import B5 from '../../assets/TrustedBrandsSvgs/yeti.svg'
+
+export const trustedBrand = [
+        B1, B2, B3, B4, B5
 ]
+
+
+// export const skillsData = [
+//     'React',
+//     'Django',
+//     'Python',
+//     'Redux',
+//     'HTML',
+//     'Javascript',
+//     'CSS',
+//     'Tailwind',
+//     'Bootstrap',
+//     'Firebase',
+//     'MySQL',
+//     'PostgreSQL',
+//     'Git',
+//     'Dart',
+//     'Flutter',
+//     'Figma',
+//     'Canva',
+    
+// ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
 // Couldn't find the required skills? Raise an issue on github at https://github.com/hhhrrrttt222111/developer-portfolio/issues/new

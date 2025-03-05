@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    min-height: 60vh;
-    padding: 2.5rem 2rem 2rem 2rem;
+    /* min-height: 60vh;
+    padding: 2.5rem 2rem 2rem 2rem; */
 }
 ::-webkit-scrollbar {
     display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
@@ -30,12 +30,14 @@
     justify-content: center; 
     width: 100%;
     margin-top: 3.5rem;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 
 .skill--scroll {
+    height: 140px;
     width: 100%;
     margin: 0 2rem;
+    background-color: black;
 }
 
 
@@ -43,8 +45,8 @@
     /* background: #FAFAFA; */
     /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12); */
     border-radius: 10px;
-    width: 160px;
-    height: 160px;
+    width: 240px;
+    height: 130px;
     margin: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -60,7 +62,7 @@
 
 
 .skill--box > img {
-    height: 50px;
+    height: 120px;
     pointer-events: none;
 }
 
@@ -82,36 +84,36 @@
 
 @media (min-width: 992px) and (max-width: 1380px) {
     .skills {
-        padding: 2rem 1rem 1rem 1rem;
+        /* padding: 2rem 1rem 1rem 1rem; */
     }
     .skillsContainer {
-        padding: 1.5rem;
-        margin-top: 1.5rem;
+        /* padding: 1.5rem;
+        margin-top: 1.5rem; */
     }
 }
 
 
 @media screen and (max-width: 992px) {
     .skills {
-        padding: 1rem;
-        min-height: 100%;
+        /* padding: 1rem;
+        min-height: 100%; */
     }
     .skillsContainer {
-        padding: 1rem;
-        margin: 1rem 0;
+        /* padding: 1rem;
+        margin: 1rem 0; */
     }
     .skillsHeader h2 {
         font-size: 3.2rem;
     }
     .skill--box {
         width: 150px;
-        height: 150px;
+        height: 130px;
         margin: 1.2rem;
         padding: 2rem 1rem;
     }
 
     .skill--box > img {
-        height: 45px;
+        height: 80px;
     }
 
 
@@ -124,10 +126,10 @@
 
 @media screen and (max-width: 800px) {
     .skills {
-        padding: 0.5rem;
+        /* padding: 0.5rem; */
     }
     .skillsContainer {
-        padding: 0.5rem;
+        /* padding: 0.5rem; */
     }
     .skillsHeader h2 {
         font-size: 3rem;
@@ -148,7 +150,7 @@
     }
 
     .skill--box > img {
-        height: 40px;
+        height: 75px;
     }
 
     .skillsHeader h2 {

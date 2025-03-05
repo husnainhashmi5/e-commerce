@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 import './TrustedBrands.css'
 
 // import { ThemeContext } from '../../contexts/ThemeContext';
-import { skillsData } from './TrustedBrandsData'
+import { trustedBrand } from './TrustedBrandsData'
 import { skillsImage } from './TBrandsimages'
 
 function TrustedBrands() {
@@ -38,14 +38,22 @@ function TrustedBrands() {
                         direction="left"
                     
                     >
-                        {skillsData.map((skill, id) => (
+                        {
+                        trustedBrand.map((skill, id) => (
                             <div className="skill--box" key={id} style={skillBoxStyle}>
-                                <img src={skillsImage(skill)} alt={skill} />
-                                <h3 style={{color: 'teal'}}>
-                                    {skill}
-                                </h3>
+                                <img src={skill} alt={skill} />
                             </div>
-                        ))}
+                        ))
+                        // skillsData.map((skill, id) => (
+                        //     <div className="skill--box" key={id} style={skillBoxStyle}>
+                        //         {/* <img src={""} alt={skill} /> */}
+                        //         <img src={skillsImage(skill)} alt={skill} />
+                        //         <h3 style={{color: 'teal'}}>
+                        //             {skill}
+                        //         </h3>
+                        //     </div>
+                        // ))
+                        }
                     </Marquee>
                 </div>
             </div>

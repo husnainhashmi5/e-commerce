@@ -29,19 +29,20 @@ const Contact = () => {
 							<div className="our-store">
 								<h3 className="c-d-gray">Our Store</h3>
 								<address className="my-4">
-									<span>54709 Willms Station</span>
+									<span>5900 Balcones Drive #17288</span>
 									<br />
-									<span>Suite 350, Washington, USA</span>
+									<span>Austin, TX 78731</span>
 								</address>
 								<div className="telephone">
-									Tel: (415) 555-0132
+									Tel: +1 (737) 307-3566
 									<br />
-									Email: admin@algohary-shop.com
+									Email: accounts@dadybux.com
 								</div>
+
 							</div>
 							{/* Careers Information */}
 							<div className="careers mt-5">
-								<h4 className="c-d-gray">Careers at Algohary Shop</h4>
+								<h4 className="c-d-gray">Careers at DadyBux Shop</h4>
 								<span className="d-block my-4">
 									Learn more about our teams and job openings.
 								</span>
