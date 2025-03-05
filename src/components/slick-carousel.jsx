@@ -38,8 +38,8 @@ const CircularCarousel = () => {
   return (
     <div className="container mx-auto  mt-5">
       <HeaderDashed
-				head1="LATEST"
-				head2="COLLECTIONS"
+				head1="CURRENT"
+				head2="CATEGORIES"
 				paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the."
 			/>
 
