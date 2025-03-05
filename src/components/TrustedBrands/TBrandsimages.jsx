@@ -1,9 +1,3 @@
-import gcp from './skills/gcp.svg'
-import html from './skills/html.svg'
-import photoshop from './skills/photoshop.svg'
-import illustrator from './skills/illustrator.svg'
-import docker from './skills/docker.svg'
-import adobeXd from './skills/adobe-xd.svg'
 import afterEffects from './skills/photoshop.svg'
 import css from './skills/photoshop.svg'
 import angular from './skills/photoshop.svg'
@@ -46,10 +40,6 @@ import redux from './skills/photoshop.svg'
 export const skillsImage = (skill) => {
     const skillID = skill.toLowerCase();
     switch (skillID) {
-        case 'gcp':
-            return gcp;
-        case 'html':
-            return html;
         case 'photoshop':
             return photoshop;
         case 'docker':
