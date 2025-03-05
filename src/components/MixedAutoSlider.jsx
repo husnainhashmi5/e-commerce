@@ -10,6 +10,8 @@ import slide_8_img from "../assets/slide-8.jpg";
 import slide_9_img from "../assets/slide-9.jpg";
 import slide_10_img from "../assets/slide-10.jpg";
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
+
 
 const MixedAutoSlider = () => {
 	const sliderImages = [slide_9_img, slide_7_img, slide_8_img, slide_1_img, slide_2_img, slide_3_img, slide_4_img, slide_5_img, slide_6_img, slide_10_img];
@@ -41,12 +43,14 @@ const MixedAutoSlider = () => {
 							Latest Arrivals
 						</h2>
 						<footer className="d-flex align-items-center gap-2 ">
+							<Link to="/collection">
 							<button
 								className="btn fit-content fw-bold c-gray p-0"
 								role="button"
 							>
 								SHOP NOW
 							</button>
+							</Link>
 							<span className="fw-bold line-span bg-gray"></span>
 						</footer>
 					</div>
