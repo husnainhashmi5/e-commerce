@@ -9,12 +9,15 @@ import slide_7_img from "../assets/slide-7.jpg";
 import slide_8_img from "../assets/slide-8.jpg";
 import slide_9_img from "../assets/slide-9.jpg";
 import slide_10_img from "../assets/slide-10.jpg";
+import { main_slider_images } from "./images.jsx"
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 
 
 const MixedAutoSlider = () => {
-	const sliderImages = [slide_9_img, slide_7_img, slide_8_img, slide_1_img, slide_2_img, slide_3_img, slide_4_img, slide_5_img, slide_6_img, slide_10_img];
+	const old_sliderImages = [
+		slide_9_img, slide_7_img, slide_8_img, slide_1_img, slide_2_img, slide_3_img, slide_4_img, slide_5_img, slide_6_img, slide_10_img];
+	const sliderImages = [...main_slider_images, ...old_sliderImages]
 	const [activeSlide, setActiveSlide] = useState(0);
 
 	// Auto-slide functionality for the image slider
