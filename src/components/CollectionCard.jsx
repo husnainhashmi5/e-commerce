@@ -1,11 +1,13 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
+import { getImageUrl } from '../context/imageHelper'
 
 
 const CollectionCard = ({data: { _id, image, name, price }, classPadding}) => {
 	const navigate = useNavigate();   // Hook to programmatically navigate to product details
 	const {currency} = useContext(ShopContext)
+	
 	
 
 	return (
@@ -16,7 +18,7 @@ const CollectionCard = ({data: { _id, image, name, price }, classPadding}) => {
 		>
 			<figure className="overflow-hidden rounded">
 				<img
-					src={image[0]}    
+					src={getImageUrl(image[0])}   
 					alt={name}
 					className="card-img rounded mx-h-300 trans-3 img-scall"
 				/>
