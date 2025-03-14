@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
-import { getImageUrl } from '../context/imageHelper'
+import { getImageUrl} from '../context/imageHelper';
 
 
 const CollectionCard = ({data: { _id, image, name, price }, classPadding}) => {
