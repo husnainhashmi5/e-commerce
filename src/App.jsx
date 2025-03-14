@@ -20,6 +20,7 @@ import ProductDetails from "./pages/ProductDetails";
 import ShoppingCart from "./pages/ShoppingCart";
 import PlaceOrder from "./pages/PlaceOrder";
 import Orders from "./pages/Orders";
+import ComponentSwitcher from "./components/ComponentSwitcher";
 
 // Importing hooks and animations
 import { useContext, useEffect } from "react";
@@ -68,6 +69,7 @@ function App() {
 					<Route path="/place-order" element={<PlaceOrder />} />
 					<Route path="/orders" element={<Orders />} />
 					<Route path="*" element={<NotFound />} />
+					<Route path="/dashboard" element={<ComponentSwitcher />} />
 				</Routes>
 			</AnimatePresence>
 

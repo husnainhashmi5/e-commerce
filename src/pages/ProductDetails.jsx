@@ -169,23 +169,46 @@ const ProductDetails = () => {
 							<p className="c-gray">{productData.description}</p>
 							{/* Select Size */}
 							<div className="select-size mt-4">
+								{Array.isArray(productData.sizes) && productData.sizes.length > 0 && (
+									<>
+									<span className="c-gray fw-bold">Select Size</span>
+									<div className="size-btns d-flex gap-2 mt-2">
+										{productData.sizes.map((size, i) => (
+										<span
+											className={`d-block px-3 py-2 bg-m-gray border-gray trans-3 ${
+											activeSize === size ? "active" : ""
+											}`}
+											role="button"
+											key={i}
+											onClick={() => setActiveSize(size)}
+										>
+											{size}
+										</span>
+										))}
+									</div>
+									</>
+								)}
+							</div>
+							<div className="select-size mt-4">
+							{productData.sizes && typeof productData.sizes === 'string' && (
+								<>
 								<span className="c-gray fw-bold">Select Size</span>
 								<div className="size-btns d-flex gap-2 mt-2">
-									{productData.sizes.map((size, i) => {
-										return (
-											<span
-												className={`d-block px-3 py-2 bg-m-gray border-gray trans-3 ${
-													activeSize == size && "active"
-												}`}
-												role="button"
-												key={i}
-												onClick={() => setActiveSize(size)}
-											>
-												{size}
-											</span>
-										);
-									})}
+									{productData.sizes.split(',').map((size, i) => (
+									<span
+										className={`d-block px-3 py-2 bg-m-gray border-gray trans-3 ${
+										activeSize === size ? "active" : ""
+										}`}
+										role="button"
+										key={i}
+										onClick={() => setActiveSize(size)}
+									>
+										{size.trim()} {/* Trim to remove any extra spaces */}
+									</span>
+									))}
 								</div>
+								</>
+							)}
 							</div>
 							{/* Add to Cart Button */}
 							{/* <button className="addcart-btn btn rounded-0 bg-black c-white mt-4 trans-3 mb-2 py-2 px-4">
