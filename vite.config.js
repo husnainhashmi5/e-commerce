@@ -20,8 +20,3 @@ export default defineConfig({
   }
 });
 
-const images = import.meta.glob("/src/assets/*", { eager: true });
-
-const getImageUrl = (imagePath) => {
-  return images[imagePath]?.default || "";
-};

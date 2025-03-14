@@ -2,6 +2,7 @@
 import { main_slider_images } from "./images.jsx"
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
+import { getImageUrl } from '../context/imageHelper';
 
 
 const MixedAutoSlider = () => {
@@ -54,7 +55,7 @@ const MixedAutoSlider = () => {
 						className={`col-12 col-md-6 d-block mh-450 d-block ${
 							activeSlide == index ? " animateSlide" : "d-none"
 						}`}
-						src={img}
+						src={getImageUrl(img)}
 						alt="One of the latest arrivals products"
 					/>
 				))}
