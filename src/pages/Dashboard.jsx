@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import productsData from '../components/FixedData';
+import { getImageUrl } from '../context/imageHelper';
 
 const Dashboard = () => {
     const [products, setProducts] = useState(productsData);
@@ -192,7 +193,7 @@ const Dashboard = () => {
                             onClick={() => handleSelectProduct(product)}
                         >
                             <img
-                                src={product.image[0]}
+                                src={getImageUrl(`${product.image[0]}`)}
                                 alt={product.name}
                                 style={{ width: '50px', height: '50px', marginRight: '10px', borderRadius: '5px' }}
                             />
@@ -263,7 +264,7 @@ const Dashboard = () => {
                                     {selectedProduct.image.map((img, index) => (
                                         <div key={index} style={{ marginBottom: '10px' }}>
                                             <img
-                                                src={img}
+                                                src={getImageUrl(`${img}`)}
                                                 alt={`Product Image ${index + 1}`}
                                                 style={{ width: '100px', height: '100px', marginRight: '10px', borderRadius: '5px' }}
                                             />

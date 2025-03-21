@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { main_slider_images } from './images';
+import { getImageUrl } from '../context/imageHelper';
 
 const MainSliderManager = () => {
   const [images, setImages] = useState(main_slider_images);
@@ -97,7 +98,7 @@ const MainSliderManager = () => {
               }}
             >
               <img
-                src={imageUrl}
+                src={getImageUrl(`${imageUrl}`)}
                 alt={`Slider Image ${index + 1}`}
                 style={{ width: '100%', borderRadius: '5px' }}
               />
@@ -127,7 +128,7 @@ const MainSliderManager = () => {
             <div>
               <label>Image Preview:</label>
               <img
-                src={newImageUrl}
+                src={getImageUrl(`${newImageUrl}`)}
                 alt="Preview"
                 style={{ width: '100%', maxWidth: '300px', borderRadius: '5px', marginTop: '10px' }}
               />
