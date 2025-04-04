@@ -1,0 +1,19 @@
+To run node in backend directory
+
+node server.js
+
+
+
+To run react JS in  ecommerce directory
+
+npm run dev
+
+
+To make build of React App
+
+npm run build
+
+
+To make preview of react js build to confirm changes will work fine on production as well first make build then run below command 
+
+npm run preview
